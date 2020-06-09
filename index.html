@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+</head>
+<body>
+<main>
+    <section class="block-1">
+        <header class="header">
+            <img class="img_header" src="img/man (1).png" alt="" height="100" />
+            <h2 class="header_h2">Груповые кредиты</h2>
+        </header>
+        <div class="description">
+            <ul class="list">
+                <li class="max_sum">до 200 000 <u>с</u></li>
+                <li class="participants">Каждому участнику группы</li>
+                <li class="pledge">Без залога</li>
+            </ul>
+            <button class="buttom_description">Подробнее</button>
+        </div>
+    </section>
+
+    <section class="block-2">
+        <header class="header">
+            <h2 class="header_h2">Подобрать кредит</h2>
+        </header>
+        <form>
+            <ul class="list">
+                <li class="format">
+                    <span class="credit">кредитный продукт</span>
+                    <select class="list_option">
+                    <option class="option">Экспресс</option>
+                    </select>
+                </li>
+                <li class="format_sum">
+                    <div class="sum_credit sum">
+                        <span>Сумма кредита</span>
+                        <span><span id="summ1"></span> сомов</span>
+                    </div>
+                    <input type="range" min="10000" max="70000" step="1000" value="10000" class="slider" id="sum_credit" />
+                    <div class="sum_credit">
+                        <span>10000 сомов</span>
+                        <span>70000 сомов</span>
+                    </div>
+                </li>
+                <li class="format_sum">
+                    <div class="month_credit month">
+                        <span>Срок погашения</span>
+                        <span><span id="summ2"></span> месяц(а/ев)</span>
+                    </div>
+                    <input type="range" min="1" max="12" step="1" value="1" class="slider" id="month_credit" />
+                    <div class="month_credit">
+                        <span>1 месяц</span>
+                        <span>12 месяцев</span>
+                    </div>
+                </li>
+                <li>
+                    <button type="button" class="buttom_range">Отправить заявку</button>
+                    <div class="month_credit total_amount">
+                        <span>Сумма возврата</span>
+                        <span><b id="summaVozvrata"></b> сом</span>
+                    </div>
+                </li>
+            </ul>
+        </form>
+    </section>
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>
